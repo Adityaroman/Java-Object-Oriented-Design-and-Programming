@@ -1,0 +1,40 @@
+// ArithmeticException
+package mypackage;
+
+public class Exception_Handling_VVI {
+    public static void main(String[] args) {
+        try { // throws the exception
+            int a = 10;
+            int b = 0;
+            int div = a / b;
+            System.out.println("Division is:" + div);
+        } 
+        catch (ArithmeticException e) { // corrected spelling of ArithmeticException
+            System.out.println("My Error: " + e);
+            // solving or debugging
+        } 
+        finally { // always executes (optional)
+            System.out.println("My Error is solving...");
+        }
+    }
+}
+
+// ArrayIndexOutOfBoundsException:
+
+package mypackage;
+
+public class Exception_Handling_VVI {
+    public static void main(String[] args) {
+        try {
+            int number[] = {1, 2, 3, 4, 5}; // creating array in java
+            System.out.println("My array: " + number[5]); // accessing out-of-bound index
+        } 
+        catch (ArrayIndexOutOfBoundsException e) { // handling exception
+            System.out.println("My Error: " + e);
+        } 
+        finally { // always executes (optional)
+            System.out.println("My Error is solving...");
+        }
+    }
+}
+
